@@ -1,0 +1,48 @@
+=====================================================================
+TIME: 2021-05-17.16:40:39
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 7f32616e48000000d87e6102ef200000.00000005.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/BinaryChunk_from_content/SIGABRT.PC.7ffff7c608cb.STACK.186f7bed00.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 47514
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c608cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 000000186f7bed00
+STACK:
+ <0x00007ffff7c45864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x0000555555580a2a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555d239> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x00005555555612ba> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555557ed00> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555557e8c7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555557ce2c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555557e829> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555dd81> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x0000555555595cc8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555bb7d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555eeab> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555e748> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555e80a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555e955> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555e90e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555e8b8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555557f0da> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x000055555555e88b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+ <0x00007ffff7c47cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555555e62e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/tezos_messages_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BinaryChunk_from_content]
+=====================================================================

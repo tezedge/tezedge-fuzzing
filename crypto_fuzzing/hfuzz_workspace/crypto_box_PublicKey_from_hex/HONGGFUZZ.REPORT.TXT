@@ -1,0 +1,49 @@
+=====================================================================
+TIME: 2020-12-23.12:00:10
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 93c41ab8dfb3ac92804cb69eaaed5aa1.00000017.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_box_PublicKey_from_hex/SIGABRT.PC.7ffff7de818b.STACK.ec670a0d0.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 4048975
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000ec670a0d0
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00005555555820d7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555557d3a6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555556c487> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x0000555555580566> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x00005555555800e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555557e05c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x00005555555800a9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x0000555555595bf1> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x0000555555598152> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555b7a5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555bfe4> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555c41a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555cb0b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555cbaa> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555d08d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555b7ce> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555c3b8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x0000555555580900> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x000055555555c38b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555b62e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_PublicKey_from_hex]
+=====================================================================

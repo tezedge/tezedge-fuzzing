@@ -1,0 +1,50 @@
+=====================================================================
+TIME: 2020-12-21.12:04:41
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 00000000000000000000000000000000.00000000.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_box_precompute/SIGABRT.PC.7ffff7de818b.STACK.18b491adfa.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 3208973
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 00000018b491adfa
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x0000555555586957> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x0000555555581c26> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x0000555555570d07> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x0000555555584de6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x0000555555584969> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x00005555555828dc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x0000555555584929> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555559a471> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555559c9d2> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555d185> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555cefa> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bfe9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555be71> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bacb> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bf2a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bb6d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bbfe> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bc78> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x0000555555585180> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x000055555555bc4b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555b9ee> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_precompute]
+=====================================================================

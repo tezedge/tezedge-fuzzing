@@ -1,0 +1,138 @@
+=====================================================================
+TIME: 2020-12-23.12:32:34
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 1a18b5479a44c46d010d147e9a18a443.0000000d.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_Nonce_new/SIGABRT.PC.7ffff7de818b.STACK.1bd9519e72.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 4060833
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001bd9519e72
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x0000555555585817> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555580ae6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555556fbc7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555583ca6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555583829> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555558179c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00005555555837e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555558379b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c933> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555be5b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555ca3a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555cacd> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c9be> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c448> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555584040> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c41b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555bc1e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+=====================================================================
+=====================================================================
+TIME: 2020-12-23.12:32:35
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: d10ac92ce826782912c129edf046d887.00000478.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_Nonce_new/SIGABRT.PC.7ffff7de818b.STACK.1879e5ef5b.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 4060939
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001879e5ef5b
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x0000555555585817> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555580ae6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555556fbc7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555583ca6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d5e3> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d5ae> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d40c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d36f> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c7e3> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555be5b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555ca3a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555cacd> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c9be> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c448> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555584040> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c41b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555bc1e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+=====================================================================
+=====================================================================
+TIME: 2020-12-23.12:35:41
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: f78f445193c181b212c129edf046d887.00000400.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_Nonce_new/SIGABRT.PC.7ffff7de818b.STACK.f727c3b32.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 4064827
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000f727c3b32
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x0000555555586327> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00005555555815f6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00005555555706d7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00005555555847b6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d593> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d55e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d3bc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555d31f> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c365> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555bdeb> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c47a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c50d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c3fe> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c2c8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x0000555555584b50> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x000055555555c29b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555bbae> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_Nonce_new]
+=====================================================================

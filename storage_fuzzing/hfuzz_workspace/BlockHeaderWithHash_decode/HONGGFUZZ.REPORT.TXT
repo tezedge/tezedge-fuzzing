@@ -1,0 +1,94 @@
+=====================================================================
+TIME: 2020-12-18.11:54:34
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 00000000000000000000000000000000.00000000.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/BlockHeaderWithHash_decode/SIGABRT.PC.7ffff7de818b.STACK.dc846460d.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 2605876
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000dc846460d
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00005555555a9707> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a49d6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x0000555555593ab7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a7b96> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a7719> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a568c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a76d9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555c1311> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555c49a2> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x0000555555566aba> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555556aedb> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555556619a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555555efad> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555555f9be> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555555ec38> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a7f30> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555555ec0b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555e71e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+=====================================================================
+=====================================================================
+TIME: 2021-01-29.10:02:14
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 0b5c311ca8b1ccae0a2c2343d8acd864.00001687.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/BlockHeaderWithHash_decode/SIGABRT.PC.7ffff7c6418b.STACK.1bff5dc64d.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 24664
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c6418b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001bff5dc64d
+STACK:
+ <0x00007ffff7c43859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00005555555a82aa> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a3649> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555557fc2a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a6576> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a6097> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a44cc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a5ff9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555bdf91> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555c1592> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555620b4> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x0000555555561868> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x000055555556821a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x0000555555562865> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555692de> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x0000555555562bb8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00005555555a6977> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x0000555555562b8b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+ <0x00007ffff7c450b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555e83e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/BlockHeaderWithHash_decode]
+=====================================================================

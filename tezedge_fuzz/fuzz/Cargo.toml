@@ -1,0 +1,260 @@
+
+[package]
+name = "tezedge_fuzz-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.3"
+
+[dependencies.tezedge_fuzz]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "base58_from_base58check"
+path = "fuzz_targets/base58_from_base58check.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base58_to_base58check"
+path = "fuzz_targets/base58_to_base58check.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "blake2b_digest_128"
+path = "fuzz_targets/blake2b_digest_128.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "blake2b_digest_160"
+path = "fuzz_targets/blake2b_digest_160.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "blake2b_digest_256"
+path = "fuzz_targets/blake2b_digest_256.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "crypto_box_ProofOfWork_from_hex"
+path = "fuzz_targets/crypto_box_ProofOfWork_from_hex.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "crypto_box_PublicKey_from_hex"
+path = "fuzz_targets/crypto_box_PublicKey_from_hex.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "crypto_box_SecretKey_from_hex"
+path = "fuzz_targets/crypto_box_SecretKey_from_hex.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "crypto_Nonce_new"
+path = "fuzz_targets/crypto_Nonce_new.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "HashType_BlockHash_b58check_to_hash"
+path = "fuzz_targets/HashType_BlockHash_b58check_to_hash.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "HashType_BlockHash_bytes_and_string_convert"
+path = "fuzz_targets/HashType_BlockHash_bytes_and_string_convert.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "HashType_BlockHash_hash_to_b58check"
+path = "fuzz_targets/HashType_BlockHash_hash_to_b58check.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "AckMessage_from_bytes"
+path = "fuzz_targets/AckMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "AdvertiseMessage_from_bytes"
+path = "fuzz_targets/AdvertiseMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "BinaryChunk_from_content"
+path = "fuzz_targets/BinaryChunk_from_content.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "BlockHeader_from_bytes"
+path = "fuzz_targets/BlockHeader_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "BlockHeaderMessage_from_bytes"
+path = "fuzz_targets/BlockHeaderMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "Component_from_bytes"
+path = "fuzz_targets/Component_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "ConnectionMessage_from_bytes"
+path = "fuzz_targets/ConnectionMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "CurrentBranch_from_bytes"
+path = "fuzz_targets/CurrentBranch_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "CurrentBranchMessage_from_bytes"
+path = "fuzz_targets/CurrentBranchMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "CurrentHeadMessage_from_bytes"
+path = "fuzz_targets/CurrentHeadMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "DeactivateMessage_from_bytes"
+path = "fuzz_targets/DeactivateMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "GetBlockHeadersMessage_from_bytes"
+path = "fuzz_targets/GetBlockHeadersMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "GetCurrentBranchMessage_from_bytes"
+path = "fuzz_targets/GetCurrentBranchMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "GetCurrentHeadMessage_from_bytes"
+path = "fuzz_targets/GetCurrentHeadMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "GetOperationsForBlocksMessage_from_bytes"
+path = "fuzz_targets/GetOperationsForBlocksMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "GetOperationsMessage_from_bytes"
+path = "fuzz_targets/GetOperationsMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "GetProtocolsMessage_from_bytes"
+path = "fuzz_targets/GetProtocolsMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "Mempool_from_bytes"
+path = "fuzz_targets/Mempool_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "MetadataMessage_from_bytes"
+path = "fuzz_targets/MetadataMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "NetworkVersion_from_bytes"
+path = "fuzz_targets/NetworkVersion_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "Operation_from_bytes"
+path = "fuzz_targets/Operation_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "OperationMessage_from_bytes"
+path = "fuzz_targets/OperationMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "OperationsForBlock_from_bytes"
+path = "fuzz_targets/OperationsForBlock_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "OperationsForBlocksMessage_from_bytes"
+path = "fuzz_targets/OperationsForBlocksMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "PeerMessageResponse_from_bytes"
+path = "fuzz_targets/PeerMessageResponse_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "Protocol_from_bytes"
+path = "fuzz_targets/Protocol_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "ProtocolMessage_from_bytes"
+path = "fuzz_targets/ProtocolMessage_from_bytes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "SwapMessage_from_bytes"
+path = "fuzz_targets/SwapMessage_from_bytes.rs"
+test = false
+doc = false

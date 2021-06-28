@@ -1,0 +1,13 @@
+[package]
+name = "tezos_protocol_fuzzing"
+version = "0.1.0"
+authors = ["Patrick Ventuzelo <ventuzelo.patrick@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+honggfuzz = "0.5.52"
+tezos_encoding = { path = "../code/tezedge/tezos/encoding" }
+tezos_messages = { path = "../code/tezedge/tezos/messages" }
+no-fuzz = { path = "../no-fuzz" }

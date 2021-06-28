@@ -1,0 +1,147 @@
+=====================================================================
+TIME: 2021-01-06.15:37:58
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 29f7e6efaafb6ac41e10fea3433b3937.00000040.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_box_ProofOfWork_from_hex/SIGABRT.PC.7ffff7de818b.STACK.ec670a0d0.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 3681348
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7de818b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000ec670a0d0
+STACK:
+ <0x00007ffff7dc7859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00005555555820d7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555557d3a6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555556c487> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555580566> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x00005555555800e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555557e05c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x00005555555800a9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555595bf1> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555598152> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555cf75> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555cbbf> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555d03a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555cfbb> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b83a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b71d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b7de> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555c658> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555580900> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555c62b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x00007ffff7dc90b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555b62e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+=====================================================================
+=====================================================================
+TIME: 2021-02-08.16:51:01
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 2a5a5bea700000002a5bea5a70000000.00000004.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_box_ProofOfWork_from_hex/SIGABRT.PC.7ffff7db38cb.STACK.ce870bcba.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 813161
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7db38cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000ce870bcba
+STACK:
+ <0x00007ffff7d98864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558573a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555580ad9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555d27a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583a06> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583527> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555558195c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583489> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555597301> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555599802> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555cc28> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555c0d5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b88a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555c188> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b91a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555bcf5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555bcce> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555bfa8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583e07> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555bf7b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x00007ffff7d9acb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555555b79e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+=====================================================================
+=====================================================================
+TIME: 2021-02-12.15:16:43
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 29f7e6efaafb6ac41e10fea3433b3937.00000040.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/crypto_box_ProofOfWork_from_hex/SIGABRT.PC.7ffff7db28cb.STACK.ce870bcba.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 472293
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7db28cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000ce870bcba
+STACK:
+ <0x00007ffff7d97864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558573a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555580ad9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555d27a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583a06> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583527> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555558195c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583489> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555597301> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555599802> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b948> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555ce95> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555bdda> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555b878> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555ba0a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555ccf5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555c62e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555cd98> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x0000555555583e07> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x000055555555cd6b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+ <0x00007ffff7d99cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555555b79e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/crypto_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/crypto_box_ProofOfWork_from_hex]
+=====================================================================

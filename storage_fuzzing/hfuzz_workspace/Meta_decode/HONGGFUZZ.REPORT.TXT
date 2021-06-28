@@ -1,0 +1,47 @@
+=====================================================================
+TIME: 2021-01-29.10:10:01
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 00000000000000000000000000000000.00000000.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/Meta_decode/SIGABRT.PC.7ffff7a8118b.STACK.192e408200.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 172409
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7a8118b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 000000192e408200
+STACK:
+ <0x00007ffff7a60859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555573281a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x000055555572dbb9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x000055555570a19a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555730ae6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555730607> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x000055555572ea3c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555730569> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x00005555557443e1> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555596393> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595934> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595a48> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595aca> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595e15> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595e8e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595f08> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555730ee7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x0000555555595edb> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+ <0x00007ffff7a620b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555559584e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/Meta_decode]
+=====================================================================

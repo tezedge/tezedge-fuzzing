@@ -1,0 +1,4 @@
+[submodule "code/tezedge"]
+	path = code/tezedge
+	url = https://github.com/simplestaking/tezedge
+	branch = develop

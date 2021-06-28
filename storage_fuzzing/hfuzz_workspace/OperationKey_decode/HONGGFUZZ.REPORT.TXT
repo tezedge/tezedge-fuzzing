@@ -1,0 +1,47 @@
+=====================================================================
+TIME: 2021-01-29.12:12:16
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 00000000000000000000000000000000.00000000.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/OperationKey_decode/SIGABRT.PC.7ffff7db318b.STACK.1a510e2eb2.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 238023
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7db318b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001a510e2eb2
+STACK:
+ <0x00007ffff7d92859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x0000555555584c1a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555557ffb9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555c59a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x0000555555582ee6> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x0000555555582a07> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x0000555555580e3c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x0000555555582969> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x00005555555967e1> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x0000555555598be2> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555be94> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555bd48> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555b9ba> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555bf15> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555babe> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555ba68> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x00005555555832e7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x000055555555ba3b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+ <0x00007ffff7d940b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555555b87e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/storage_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/OperationKey_decode]
+=====================================================================

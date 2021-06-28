@@ -1,0 +1,15 @@
+[package]
+name = "cumulative_coverage_for_all_targets"
+version = "0.1.0"
+authors = ["Alexander Koptelov <alexander.koptelov@viablesystems.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+no-fuzz = { path = "../no-fuzz" }
+crypto_fuzzing = { path = "../crypto_fuzzing" }
+#rpc_fuzzing = { path = "../rpc_fuzzing" }
+storage_fuzzing = { path = "../storage_fuzzing" }
+tezos_messages_fuzzing = { path = "../tezos_messages_fuzzing" }
+tezos_protocol_fuzzing = { path = "../tezos_protocol_fuzzing" }
