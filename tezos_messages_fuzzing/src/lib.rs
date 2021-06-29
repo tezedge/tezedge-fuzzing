@@ -203,19 +203,6 @@ pub fn SwapMessage_from_bytes(data: &[u8]) {
     }
 }
 
-pub fn Protocol_get_constants_for_rpc(data: &[u8]) {
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto001);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto002);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto003);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto004);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto005);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto005_2);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto006);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto007);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto008);
-    let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto008_2);
-}
-
 #[cfg(test)]
 mod test {
     #![allow(non_snake_case)]
@@ -308,9 +295,5 @@ mod test {
             crate::ProtocolMessage_from_bytes,
         );
         no_fuzz("SwapMessage_from_bytes", crate::SwapMessage_from_bytes);
-        no_fuzz(
-            "Protocol_get_constants_for_rpc",
-            crate::Protocol_get_constants_for_rpc,
-        );
     }
 }
