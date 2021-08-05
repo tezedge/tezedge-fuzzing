@@ -5,7 +5,7 @@
 /// in `CORPUS` environment variable, inside its subdirectory named [target].
 /// If `CORPUS` variable is not set, then `hfuzz_workspace/[target]/input`
 /// directory is used.
-pub fn no_fuzz(target: &str, f: impl Fn(&[u8])) {
+pub fn no_fuzz(target: &str, mut f: impl FnMut(&[u8])) {
     let corpus = match std::env::var("CORPUS") {
         Ok(v) => format!("{}/{}", v, target),
         Err(_) => format!("hfuzz_workspace/{}/input", target),

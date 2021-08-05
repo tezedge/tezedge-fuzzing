@@ -245,7 +245,10 @@ fn test() {
         tezos_messages_fuzzing::SwapMessage_from_bytes,
     );
 
-    no_fuzz("BinaryReader_read_Z", tezos_protocol_fuzzing::BinaryReader_read_Z);
+    no_fuzz(
+        "BinaryReader_read_Z",
+        tezos_protocol_fuzzing::BinaryReader_read_Z,
+    );
     no_fuzz(
         "BinaryReader_read_Mutez",
         tezos_protocol_fuzzing::BinaryReader_read_Mutez,
@@ -253,5 +256,12 @@ fn test() {
     no_fuzz(
         "Protocol_get_constants_for_rpc",
         tezos_protocol_fuzzing::Protocol_get_constants_for_rpc,
+    );
+
+    // context fuzzing
+    no_fuzz("context_api_fuzz", context_fuzzing::context_api_fuzz());
+    no_fuzz(
+        "workingtree_deserialize_serialize_fuzz",
+        context_fuzzing::workingtree_deserialize_serialize_fuzz(),
     );
 }

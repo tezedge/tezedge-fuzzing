@@ -1,0 +1,287 @@
+=====================================================================
+TIME: 2021-07-12.18:20:42
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 0978ddc0000000001d28c99000000000.00000003.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/workingtree_deserialize_serialize_fuzz/SIGABRT.PC.7ffff262e8cb.STACK.e3d8e6f06.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 1504500
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff262e8cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000e3d8e6f06
+STACK:
+ <0x00007ffff2613864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558abca> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555f4e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556b44a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588ea0> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588a67> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555586fcc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555889c9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555560031> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555559fec8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555cead> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555619b5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555620e8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561e5a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561dd5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561dae> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555621a8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555558927a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556217b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00007ffff2615cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x00005555555608de> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+=====================================================================
+=====================================================================
+TIME: 2021-07-12.18:20:42
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 006c28a00000000028cc000000000000.00000003.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/workingtree_deserialize_serialize_fuzz/SIGABRT.PC.7ffff262e8cb.STACK.e3c461bf2.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 1504499
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff262e8cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000e3c461bf2
+STACK:
+ <0x00007ffff2613864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558abca> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555f4e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556b44a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588ea0> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588a37> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555586fcc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555889c9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555560031> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555ff7d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555565034> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561667> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555620e8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561e5a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561dd5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561dae> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555621a8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555558927a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556217b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00007ffff2615cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x00005555555608de> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+=====================================================================
+=====================================================================
+TIME: 2021-07-13.16:49:42
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: e4e1e1e1e1a5dd51983d0541e1e1e1e1.00000008.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/workingtree_deserialize_serialize_fuzz/SIGABRT.PC.7ffff262e8cb.STACK.e3c128aba.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 37807
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff262e8cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000e3c128aba
+STACK:
+ <0x00007ffff2613864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558abba> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555f4e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556b43a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588e90> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588a27> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555586fbc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555889b9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555560031> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555ff7d> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555565024> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561688> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555620d8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561e4a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561dc5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561d9e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555562198> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555558926a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556216b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00007ffff2615cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x00005555555608de> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+=====================================================================
+=====================================================================
+TIME: 2021-07-13.16:49:42
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 2720c1a6dbf22e0116810175b52768ef.00000046.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/workingtree_deserialize_serialize_fuzz/SIGABRT.PC.7ffff262e8cb.STACK.e3c5c7c15.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 37810
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff262e8cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000e3c5c7c15
+STACK:
+ <0x00007ffff2613864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558abba> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555f4e9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556b43a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588e90> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588a57> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555586fbc> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555889b9> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555560031> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555559feb8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555cead> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555619b8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555620d8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561e4a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561dc5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561d9e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555562198> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555558926a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556216b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00007ffff2615cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x00005555555608de> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+=====================================================================
+=====================================================================
+TIME: 2021-07-13.17:04:47
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: a666b6cecea535f9b0da01fd12982616.00000400.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/workingtree_deserialize_serialize_fuzz/SIGABRT.PC.7ffff262e8cb.STACK.1b375ab165.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 42283
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff262e8cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001b375ab165
+STACK:
+ <0x00007ffff2613864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558ac2a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555f509> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556b4aa> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588f00> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588ac7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555558702c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588a29> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555560051> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555559ff28> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555cecd> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561a1e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555562148> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561eba> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561e35> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561e0e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555562208> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555892da> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555621db> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00007ffff2615cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x00005555555608fe> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+=====================================================================
+=====================================================================
+TIME: 2021-07-13.17:07:36
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 090090000000001100d2f00000000090.00000009.honggfuzz.cov
+FUZZ_FNAME: hfuzz_workspace/workingtree_deserialize_serialize_fuzz/SIGABRT.PC.7ffff262e8cb.STACK.1956cfaea5.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 43358
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff262e8cb
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001956cfaea5
+STACK:
+ <0x00007ffff2613864> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555558aa8a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555f469> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556b30a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588d60> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555888f7> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555586e8c> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555588889> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555ffb1> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555555fefd> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555618f8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555562008> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561d7a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561cf5> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x0000555555561cce> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00005555555620c8> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555558913a> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x000055555556209b> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+ <0x00007ffff2615cb2> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.32.so]
+ <0x000055555556085e> [func:UNKNOWN file: line:0 module:/home/scop/Documents/consulting/simplestaking/tezedge-fuzzing/context_fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/workingtree_deserialize_serialize_fuzz]
+=====================================================================
