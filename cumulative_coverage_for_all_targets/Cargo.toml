@@ -13,3 +13,4 @@ crypto_fuzzing = { path = "../crypto_fuzzing" }
 storage_fuzzing = { path = "../storage_fuzzing" }
 tezos_messages_fuzzing = { path = "../tezos_messages_fuzzing" }
 tezos_protocol_fuzzing = { path = "../tezos_protocol_fuzzing" }
+context_fuzzing = { path = "../context_fuzzing" }
