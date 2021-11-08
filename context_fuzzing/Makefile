@@ -1,5 +1,7 @@
-.PHONY: run test list
+export LD_LIBRARY_PATH=.
 
+.PHONY: all
+	
 # $(a) is the target
 # to use it: make run a=BinaryChunk_from_content
 default: run
@@ -8,30 +10,29 @@ default: run
 # -t : Timeout in seconds
 HFUZZ_RUN_ARGS := HFUZZ_RUN_ARGS="-T -t 60"
 
-# Tezos shared library path
-TEZOS_SO_PATH := ../code/tezedge/tezos/sys/lib_tezos/artifacts
 
 list:
 	ls src/bin/ | awk '{print substr($$0, 1, length($$0)-3)}'
 
 run: list
 	$(call check_defined, a)
-	LD_LIBRARY_PATH=$(TEZOS_SO_PATH) $(HFUZZ_RUN_ARGS) cargo hfuzz run $(a)
+	# export LD_LIBRARY_PATH=.
+	$(HFUZZ_RUN_ARGS) cargo +nightly hfuzz run $(a)
 
 debug:
 	$(call check_defined, a)
 	$(call check_defined, crash)
-	LD_LIBRARY_PATH=$(TEZOS_SO_PATH) $(HFUZZ_RUN_ARGS) cargo hfuzz run-debug $(a) $(crash)
+	$(HFUZZ_RUN_ARGS) cargo +nightly hfuzz run-debug $(a) $(crash)
 
 debug-all:
-	export LD_LIBRARY_PATH=.
-	cargo hfuzz build-debug
+	# export LD_LIBRARY_PATH=.
+	cargo +nightly hfuzz build-debug
 
 diff_fuzz:
-	cargo run --bin context_fuzzing fuzz
+	cargo +nightly run --release --bin context_fuzzing fuzz
 
 diff_replay:
-	cargo run --bin context_fuzzing replay 1337
+	cargo +nightly run --release --bin context_fuzzing replay 1337
 
 clean:
 	rm -rf hfuzz_target

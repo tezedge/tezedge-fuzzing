@@ -1,11 +1,11 @@
 #![allow(non_snake_case)]
 
+use ::no_fuzz::no_fuzz_all;
+
 use tezos_messages::p2p::binary_message::BinaryChunk;
 use tezos_messages::p2p::binary_message::{BinaryRead, BinaryWrite};
 use tezos_messages::p2p::encoding::operation::GetOperationsMessage;
 use tezos_messages::p2p::encoding::prelude::*;
-
-use tezos_messages::protocol::{get_constants_for_rpc, SupportedProtocol};
 
 pub fn BinaryChunk_from_content(data: &[u8]) {
     if let Ok(a) = BinaryChunk::from_content(&data) {
@@ -203,97 +203,41 @@ pub fn SwapMessage_from_bytes(data: &[u8]) {
     }
 }
 
+no_fuzz_all!{
+    BinaryChunk_from_content,
+    AckMessage_from_bytes,
+    AdvertiseMessage_from_bytes,
+    BlockHeader_from_bytes,
+    BlockHeaderMessage_from_bytes,
+    Component_from_bytes,
+    ConnectionMessage_from_bytes,
+    CurrentBranch_from_bytes,
+    CurrentBranchMessage_from_bytes,
+    CurrentHeadMessage_from_bytes,
+    DeactivateMessage_from_bytes,
+    GetBlockHeadersMessage_from_bytes,
+    GetCurrentBranchMessage_from_bytes,
+    GetCurrentHeadMessage_from_bytes,
+    GetOperationsForBlocksMessage_from_bytes,
+    GetOperationsMessage_from_bytes,
+    GetProtocolsMessage_from_bytes,
+    Mempool_from_bytes,
+    MetadataMessage_from_bytes,
+    NetworkVersion_from_bytes,
+    Operation_from_bytes,
+    OperationMessage_from_bytes,
+    OperationsForBlock_from_bytes,
+    OperationsForBlocksMessage_from_bytes,
+    PeerMessageResponse_from_bytes,
+    Protocol_from_bytes,
+    ProtocolMessage_from_bytes,
+    SwapMessage_from_bytes,
+}
+
 #[cfg(test)]
 mod test {
-    #![allow(non_snake_case)]
-    use no_fuzz::no_fuzz;
-
     #[test]
     fn test() {
-        no_fuzz("AckMessage_from_bytes", crate::AckMessage_from_bytes);
-        no_fuzz(
-            "AdvertiseMessage_from_bytes",
-            crate::AdvertiseMessage_from_bytes,
-        );
-        no_fuzz("BinaryChunk_from_content", crate::BinaryChunk_from_content);
-        no_fuzz("BlockHeader_from_bytes", crate::BlockHeader_from_bytes);
-        no_fuzz(
-            "BlockHeaderMessage_from_bytes",
-            crate::BlockHeaderMessage_from_bytes,
-        );
-        no_fuzz("Component_from_bytes", crate::Component_from_bytes);
-        no_fuzz(
-            "ConnectionMessage_from_bytes",
-            crate::ConnectionMessage_from_bytes,
-        );
-        no_fuzz("CurrentBranch_from_bytes", crate::CurrentBranch_from_bytes);
-        no_fuzz(
-            "CurrentBranchMessage_from_bytes",
-            crate::CurrentBranchMessage_from_bytes,
-        );
-        no_fuzz(
-            "CurrentHeadMessage_from_bytes",
-            crate::CurrentHeadMessage_from_bytes,
-        );
-        no_fuzz(
-            "DeactivateMessage_from_bytes",
-            crate::DeactivateMessage_from_bytes,
-        );
-        no_fuzz(
-            "GetBlockHeadersMessage_from_bytes",
-            crate::GetBlockHeadersMessage_from_bytes,
-        );
-        no_fuzz(
-            "GetCurrentBranchMessage_from_bytes",
-            crate::GetCurrentBranchMessage_from_bytes,
-        );
-        no_fuzz(
-            "GetCurrentHeadMessage_from_bytes",
-            crate::GetCurrentHeadMessage_from_bytes,
-        );
-        no_fuzz(
-            "GetOperationsForBlocksMessage_from_bytes",
-            crate::GetOperationsForBlocksMessage_from_bytes,
-        );
-        no_fuzz(
-            "GetOperationsMessage_from_bytes",
-            crate::GetOperationsMessage_from_bytes,
-        );
-        no_fuzz(
-            "GetProtocolsMessage_from_bytes",
-            crate::GetProtocolsMessage_from_bytes,
-        );
-        no_fuzz("Mempool_from_bytes", crate::Mempool_from_bytes);
-        no_fuzz(
-            "MetadataMessage_from_bytes",
-            crate::MetadataMessage_from_bytes,
-        );
-        no_fuzz(
-            "NetworkVersion_from_bytes",
-            crate::NetworkVersion_from_bytes,
-        );
-        no_fuzz("Operation_from_bytes", crate::Operation_from_bytes);
-        no_fuzz(
-            "OperationMessage_from_bytes",
-            crate::OperationMessage_from_bytes,
-        );
-        no_fuzz(
-            "OperationsForBlock_from_bytes",
-            crate::OperationsForBlock_from_bytes,
-        );
-        no_fuzz(
-            "OperationsForBlocksMessage_from_bytes",
-            crate::OperationsForBlocksMessage_from_bytes,
-        );
-        no_fuzz(
-            "PeerMessageResponse_from_bytes",
-            crate::PeerMessageResponse_from_bytes,
-        );
-        no_fuzz("Protocol_from_bytes", crate::Protocol_from_bytes);
-        no_fuzz(
-            "ProtocolMessage_from_bytes",
-            crate::ProtocolMessage_from_bytes,
-        );
-        no_fuzz("SwapMessage_from_bytes", crate::SwapMessage_from_bytes);
+        super::no_fuzz_all()
     }
 }

@@ -208,122 +208,42 @@ pub fn HashType_PublicKeyP256_and_string_convert(data: &[u8]) {
     }
 }
 
+no_fuzz::no_fuzz_all! {
+    base58_from_base58check,
+    base58_to_base58check,
+    blake2b_digest_128,
+    blake2b_digest_160,
+    blake2b_digest_256,
+    crypto_box_ProofOfWork_from_hex,
+    crypto_box_PublicKey_from_hex,
+    crypto_box_SecretKey_from_hex,
+    crypto_Nonce_new,
+    HashType_BlockHash_b58check_to_hash,
+    HashType_BlockHash_bytes_and_string_convert,
+    HashType_BlockHash_hash_to_b58check,
+    HashType_ChainId_bytes_and_string_convert,
+    HashType_BlockMetadataHash_bytes_and_string_convert,
+    HashType_ContextHash_bytes_and_string_convert,
+    HashType_ProtocolHash_bytes_and_string_convert,
+    HashType_OperationHash_bytes_and_string_convert,
+    HashType_OperationListListHash_bytes_and_string_convert,
+    HashType_OperationMetadataHash_bytes_and_string_convert,
+    HashType_OperationMetadataListListHash_bytes_and_string_convert,
+    HashType_CryptoboxPublicKeyHash_bytes_and_string_convert,
+    HashType_ContractKt1Hash_bytes_and_string_convert,
+    HashType_ContractTz1Hash_bytes_and_string_convert,
+    HashType_ContractTz2Hash_bytes_and_string_convert,
+    HashType_ContractTz3Hash_and_string_convert,
+    HashType_PublicKeyEd25519_and_string_convert,
+    HashType_PublicKeySecp256k1_and_string_convert,
+    HashType_PublicKeyP256_and_string_convert,
+}
+
 #[cfg(test)]
 pub mod test {
 
-    use no_fuzz::*;
-
     #[test]
     fn test() {
-        no_fuzz("base58_from_base58check", crate::base58_from_base58check);
-        no_fuzz("base58_to_base58check", crate::base58_to_base58check);
-        no_fuzz("blake2b_digest_128", crate::blake2b_digest_128);
-        no_fuzz("blake2b_digest_160", crate::blake2b_digest_160);
-        no_fuzz("blake2b_digest_256", crate::blake2b_digest_256);
-        no_fuzz(
-            "crypto_box_ProofOfWork_from_hex",
-            crate::crypto_box_ProofOfWork_from_hex,
-        );
-        no_fuzz(
-            "crypto_box_PublicKey_from_hex",
-            crate::crypto_box_PublicKey_from_hex,
-        );
-        no_fuzz(
-            "crypto_box_SecretKey_from_hex",
-            crate::crypto_box_SecretKey_from_hex,
-        );
-        no_fuzz("crypto_Nonce_new", crate::crypto_Nonce_new);
-        no_fuzz(
-            "HashType_BlockHash_b58check_to_hash",
-            crate::HashType_BlockHash_b58check_to_hash,
-        );
-        no_fuzz(
-            "HashType_BlockHash_bytes_and_string_convert",
-            crate::HashType_BlockHash_bytes_and_string_convert,
-        );
-        no_fuzz(
-            "HashType_BlockHash_hash_to_b58check",
-            crate::HashType_BlockHash_hash_to_b58check,
-        );
-
-        no_fuzz(
-            "HashType_ChainId_bytes_and_string_convert",
-            crate::HashType_ChainId_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_BlockMetadataHash_bytes_and_string_convert",
-            crate::HashType_BlockMetadataHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_ContextHash_bytes_and_string_convert",
-            crate::HashType_ContextHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_ProtocolHash_bytes_and_string_convert",
-            crate::HashType_ProtocolHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_OperationHash_bytes_and_string_convert",
-            crate::HashType_OperationHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_OperationListListHash_bytes_and_string_convert",
-            crate::HashType_OperationListListHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_OperationMetadataHash_bytes_and_string_convert",
-            crate::HashType_OperationMetadataHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_OperationMetadataListListHash_bytes_and_string_convert",
-            crate::HashType_OperationMetadataListListHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_CryptoboxPublicKeyHash_bytes_and_string_convert",
-            crate::HashType_CryptoboxPublicKeyHash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_ContractKt1Hash_bytes_and_string_convert",
-            crate::HashType_ContractKt1Hash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_ContractTz1Hash_bytes_and_string_convert",
-            crate::HashType_ContractTz1Hash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_ContractTz2Hash_bytes_and_string_convert",
-            crate::HashType_ContractTz2Hash_bytes_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_ContractTz3Hash_and_string_convert",
-            crate::HashType_ContractTz3Hash_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_PublicKeyEd25519_and_string_convert",
-            crate::HashType_PublicKeyEd25519_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_PublicKeySecp256k1_and_string_convert",
-            crate::HashType_PublicKeySecp256k1_and_string_convert,
-        );
-
-        no_fuzz(
-            "HashType_PublicKeyP256_and_string_convert",
-            crate::HashType_PublicKeyP256_and_string_convert,
-        );
+        super::no_fuzz_all();
     }
 }

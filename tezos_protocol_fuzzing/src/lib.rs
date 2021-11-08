@@ -23,14 +23,17 @@ pub fn Protocol_get_constants_for_rpc(data: &[u8]) {
     let _ = get_constants_for_rpc(&data, &SupportedProtocol::Proto008_2);
 }
 
+no_fuzz::no_fuzz_all! {
+    BinaryReader_read_Z,
+    BinaryReader_read_Mutez,
+    Protocol_get_constants_for_rpc,
+}
+
 #[cfg(test)]
 mod test {
-    use no_fuzz::no_fuzz;
 
     #[test]
     fn test() {
-        no_fuzz("BinaryReader_read_Z", crate::BinaryReader_read_Z);
-        no_fuzz("BinaryReader_read_Mutez", crate::BinaryReader_read_Mutez);
-        no_fuzz("Protocol_get_constants_for_rpc", crate::Protocol_get_constants_for_rpc);
+        super::no_fuzz_all();
     }
 }
