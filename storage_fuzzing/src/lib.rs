@@ -32,20 +32,19 @@ pub fn OperationKey_decode(data: &[u8]) {
     let _ = OperationKey::decode(data);
 }
 
+no_fuzz::no_fuzz_all! {
+    BlockHeaderWithHash_decode,
+    Hash_decode,
+    MempoolKey_decode,
+    Meta_decode,
+    MetaKey_decode,
+    OperationKey_decode,
+}
+
 #[cfg(test)]
 mod test {
-    use no_fuzz::no_fuzz;
-
     #[test]
     fn test() {
-        no_fuzz(
-            "BlockHeaderWithHash_decode",
-            crate::BlockHeaderWithHash_decode,
-        );
-        no_fuzz("Hash_decode", crate::Hash_decode);
-        no_fuzz("MempoolKey_decode", crate::MempoolKey_decode);
-        no_fuzz("Meta_decode", crate::Meta_decode);
-        no_fuzz("MetaKey_decode", crate::MetaKey_decode);
-        no_fuzz("OperationKey_decode", crate::OperationKey_decode);
+        super::no_fuzz_all();
     }
 }
