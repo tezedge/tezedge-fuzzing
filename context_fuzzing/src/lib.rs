@@ -205,3 +205,11 @@ pub fn no_fuzz_all() {
     no_fuzz::no_fuzz("context_api_fuzz", context_api_fuzz());
     no_fuzz::no_fuzz("workingtree_deserialize_serialize_fuzz", workingtree_deserialize_serialize_fuzz);
 }
+
+#[cfg(test)]
+mod test {
+    #[test]
+    fn test() {
+        super::no_fuzz_all()
+    }
+}
